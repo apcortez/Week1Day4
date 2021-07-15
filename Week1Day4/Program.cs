@@ -27,7 +27,22 @@ namespace Week1Day4
             int n = 10;
             ((n % 2 == 0) ? ref pari : ref dispari)++;
 
-           
+            //Resize array
+            int[] mioArray = new int[10];
+            mioArray[0] = 1;
+            mioArray[1] = 2;
+            mioArray[2] = 3;
+            for (int i = 0; i < mioArray.Length; i++) 
+            {
+                Console.Write($"{mioArray[i]} \t");
+            }
+
+            Array.Resize(ref mioArray, 3);
+            Console.Write("\nStampa del mio array dopo il resize\n");
+            for (int i = 0; i < mioArray.Length; i++)
+            {
+                Console.Write($"{mioArray[i]} \t");
+            }
         }
     }
 }
