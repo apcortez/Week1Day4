@@ -1,10 +1,26 @@
 ﻿using System;
+using System.IO;
 
 namespace Week1Day4
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            //Esempio1();
+            //Esempio2();
+
+            StreamWriter sw = new StreamWriter(@"fileProva.txt");
+            sw.WriteLine("Ciao a tutte");
+            sw.Close();
+        }
+
+        private static void Esempio2()
+        {
+            
+        }
+
+        private static void Esempio1()
         {
             //alternativa if else - ternario
             int a = 1;
@@ -15,7 +31,7 @@ namespace Week1Day4
                 c = " a è più piccolo di b";
 
             }
-            else 
+            else
             {
                 c = "a è più grande di b";
             }
@@ -32,7 +48,7 @@ namespace Week1Day4
             mioArray[0] = 1;
             mioArray[1] = 2;
             mioArray[2] = 3;
-            for (int i = 0; i < mioArray.Length; i++) 
+            for (int i = 0; i < mioArray.Length; i++)
             {
                 Console.Write($"{mioArray[i]} \t");
             }
@@ -43,6 +59,12 @@ namespace Week1Day4
             {
                 Console.Write($"{mioArray[i]} \t");
             }
+            Console.Write("\nStampa del mio array con foreach dopo il resize\n");
+            foreach (var item in mioArray)
+            {
+                Console.Write(item + "\t");
+            }
         }
     }
+    
 }
