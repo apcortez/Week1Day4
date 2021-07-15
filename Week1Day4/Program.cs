@@ -10,9 +10,33 @@ namespace Week1Day4
             //Esempio1();
             //Esempio2();
 
+            //Path default con chiusura manuale
             StreamWriter sw = new StreamWriter(@"fileProva.txt");
-            sw.WriteLine("Ciao a tutte");
+            sw.WriteLine("Ciao a tutte - utilizzo con path default");
             sw.Close();
+
+            //Path customized con chiusura manuale
+            string path = @"C:\Users\angelica.cortez\source\repos\Week1Day4\fileProva-manuale.txt";
+            StreamWriter sw1 = new StreamWriter(path);
+            sw1.WriteLine("Buongiorno a tutte - utilizzo con path specifico");
+            sw1.Close();
+
+            //Path customized con chiusura automatica
+            string path1 = @"C:\Users\angelica.cortez\source\repos\Week1Day4\fileProva-automatica.txt";
+            using (StreamWriter sw2 = new StreamWriter(path1)) 
+            {
+                sw2.WriteLine("Buongiorno - utilizzo con chiusura automatica");
+            }
+            //Scrittura su file sovrascrivendo il contenuto precedente
+            using (StreamWriter sw2 = new StreamWriter(path1))
+            {
+                sw2.WriteLine("Come state?");
+            }
+            using (StreamWriter sw2 = new StreamWriter(path1, true))
+            {
+                sw2.WriteLine("Bene grazie!");
+            }
+
         }
 
         private static void Esempio2()
