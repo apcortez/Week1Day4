@@ -10,6 +10,32 @@ namespace Week1Day4
             //Esempio1();
             //Esempio2();
 
+            //lettura su file
+            string path1 = @"C:\Users\angelica.cortez\source\repos\Week1Day4\fileProva-automatica.txt";
+
+            //lettura file
+            using (StreamReader sw2 = new StreamReader(path1))
+            {
+                string contenutoFile = sw2.ReadToEnd();
+            }
+
+            //lettura riga
+            using (StreamReader sw2 = new StreamReader(path1)) 
+            {
+                string contenutoRiga = sw2.ReadLine();
+            }
+
+            using(StreamReader sw2 = new StreamReader(path1)) 
+            {
+                string contenutoFile = sw2.ReadToEnd();
+                string[] arrayRighe = contenutoFile.Split("\r\n");
+            }
+
+
+        }
+
+        private static void Esempio2()
+        {
             //Path default con chiusura manuale
             StreamWriter sw = new StreamWriter(@"fileProva.txt");
             sw.WriteLine("Ciao a tutte - utilizzo con path default");
@@ -23,7 +49,7 @@ namespace Week1Day4
 
             //Path customized con chiusura automatica
             string path1 = @"C:\Users\angelica.cortez\source\repos\Week1Day4\fileProva-automatica.txt";
-            using (StreamWriter sw2 = new StreamWriter(path1)) 
+            using (StreamWriter sw2 = new StreamWriter(path1))
             {
                 sw2.WriteLine("Buongiorno - utilizzo con chiusura automatica");
             }
@@ -32,16 +58,12 @@ namespace Week1Day4
             {
                 sw2.WriteLine("Come state?");
             }
+
+            //Scrittura su file mantenendo il contenuto precedente
             using (StreamWriter sw2 = new StreamWriter(path1, true))
             {
                 sw2.WriteLine("Bene grazie!");
             }
-
-        }
-
-        private static void Esempio2()
-        {
-            
         }
 
         private static void Esempio1()
