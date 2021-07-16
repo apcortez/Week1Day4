@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1Day4", "Week1Day4\Week1Day4.csproj", "{7C78F834-4FD8-44BD-B27C-460FA30363D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week1Day4", "Week1Day4\Week1Day4.csproj", "{7C78F834-4FD8-44BD-B27C-460FA30363D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1Day4.Esercizio1", "Week1Day4.Esercizio1\Week1Day4.Esercizio1.csproj", "{8870F7EA-AEFB-44AB-ADFC-B1854ACEA66F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week1Day4.Esercizio1", "Week1Day4.Esercizio1\Week1Day4.Esercizio1.csproj", "{8870F7EA-AEFB-44AB-ADFC-B1854ACEA66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1Day4.Esercizio2", "Week1Day4.Esercizio2\Week1Day4.Esercizio2.csproj", "{7AAD35EF-B991-4091-B601-F667F3BE3D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week1Day4.Esercizio2", "Week1Day4.Esercizio2\Week1Day4.Esercizio2.csproj", "{7AAD35EF-B991-4091-B601-F667F3BE3D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1Day4.Esercizio3", "Week1Day4.Esercizio3\Week1Day4.Esercizio3.csproj", "{85EA6356-03F0-4A7C-989C-91537D6A9139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week1Day4.Esercizio3", "Week1Day4.Esercizio3\Week1Day4.Esercizio3.csproj", "{85EA6356-03F0-4A7C-989C-91537D6A9139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1Day4.Esercizio4", "Week1Day4.Esercizio4\Week1Day4.Esercizio4.csproj", "{A7F0E8C2-B32F-4A05-9400-30F7FC6BEA71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week1Day4.Esercizio4", "Week1Day4.Esercizio4\Week1Day4.Esercizio4.csproj", "{A7F0E8C2-B32F-4A05-9400-30F7FC6BEA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1Day4.Esercizio4-optional", "Week1Day4.Esercizio4-optional\Week1Day4.Esercizio4-optional.csproj", "{05684ACD-7F5F-40D9-B1CB-9A253E3AA7A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A7F0E8C2-B32F-4A05-9400-30F7FC6BEA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F0E8C2-B32F-4A05-9400-30F7FC6BEA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F0E8C2-B32F-4A05-9400-30F7FC6BEA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05684ACD-7F5F-40D9-B1CB-9A253E3AA7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05684ACD-7F5F-40D9-B1CB-9A253E3AA7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05684ACD-7F5F-40D9-B1CB-9A253E3AA7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05684ACD-7F5F-40D9-B1CB-9A253E3AA7A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
